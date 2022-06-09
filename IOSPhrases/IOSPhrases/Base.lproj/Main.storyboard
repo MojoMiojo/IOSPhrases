@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IOSPhrases" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="bNU-fy-kqw" userLabel="logo">
+                                <rect key="frame" x="86" y="44" width="242" height="140"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zc-NR-eAu">
+                                <rect key="frame" x="148" y="202" width="118" height="50"/>
+                                <color key="backgroundColor" red="0.32945358749999998" green="0.52624970670000004" blue="0.098490722480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="118" id="FoF-uV-jvQ"/>
+                                    <constraint firstAttribute="height" constant="50" id="IIS-fg-HBS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Nova frase">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="newPhraseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Dw-gZ-pny"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aspas-esquerda" translatesAutoresizingMaskIntoConstraints="NO" id="iTn-O8-As9">
+                                <rect key="frame" x="20" y="448" width="66" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="66" id="5Dm-Vh-bZ0"/>
+                                    <constraint firstAttribute="height" constant="66" id="lSn-IN-aD1"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aspas-direita" translatesAutoresizingMaskIntoConstraints="NO" id="hW3-9X-wVF">
+                                <rect key="frame" x="328" y="614" width="66" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="dcl-8M-PCK"/>
+                                    <constraint firstAttribute="width" constant="66" id="go2-8m-wV5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ter sucesso é falhar repetidamente, mas sem perder o entusiasmo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BcV-pw-QFl">
+                                <rect key="frame" x="20" y="514" width="374" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="21X-7r-DgB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bNU-fy-kqw" secondAttribute="trailing" constant="86" id="1VB-wH-HZj"/>
+                            <constraint firstItem="7zc-NR-eAu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Lb-HK-C7b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BcV-pw-QFl" secondAttribute="trailing" constant="20" id="7ro-fq-bgM"/>
+                            <constraint firstItem="7zc-NR-eAu" firstAttribute="top" secondItem="bNU-fy-kqw" secondAttribute="bottom" constant="18" id="AcU-mi-Qdj"/>
+                            <constraint firstItem="bNU-fy-kqw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="B5x-XV-Z4Z"/>
+                            <constraint firstItem="bNU-fy-kqw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="86" id="JfP-eS-ybl"/>
+                            <constraint firstItem="BcV-pw-QFl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Rwh-E2-4kc"/>
+                            <constraint firstItem="iTn-O8-As9" firstAttribute="bottom" secondItem="BcV-pw-QFl" secondAttribute="top" id="b4X-aa-BYg"/>
+                            <constraint firstItem="iTn-O8-As9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fJo-cE-jXw"/>
+                            <constraint firstItem="iTn-O8-As9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="muS-03-0fI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hW3-9X-wVF" secondAttribute="trailing" constant="20" id="tpx-Qh-CHf"/>
+                            <constraint firstItem="hW3-9X-wVF" firstAttribute="top" secondItem="BcV-pw-QFl" secondAttribute="bottom" id="zak-9O-9Z6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="phraseLabel" destination="BcV-pw-QFl" id="0sA-sj-9e7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="aspas-direita" width="56" height="55"/>
+        <image name="aspas-esquerda" width="57" height="54"/>
+        <image name="logo" width="253" height="140"/>
+    </resources>
+</document>
